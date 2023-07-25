@@ -1,0 +1,34 @@
+{
+    "name": "@symfony/map-ux",
+    "description": "Map integration for Symfony",
+    "license": "MIT",
+    "version": "1.0.0",
+    "main": "dist/controller.js",
+    "types": "dist/controller.d.ts",
+    "symfony": {
+        "controllers": {
+            "leaflet": {
+                "main": "dist/leaflet/controller.js",
+                "webpackMode": "eager",
+                "fetch": "eager",
+                "enabled": true,
+                "autoimport": {
+                    "leaflet/dist/leaflet.css": true
+                }
+            }
+        },
+        "importmap": {
+            "@hotwired/stimulus": "^3.0.0",
+            "leaflet": "^1.9.4"
+        }
+    },
+    "peerDependencies": {
+        "@hotwired/stimulus": "^3.0.0",
+        "leaflet": "^1.9.4"
+    },
+    "devDependencies": {
+        "@hotwired/stimulus": "^3.0.0",
+        "@types/leaflet": "^1.9.3",
+        "leaflet": "^1.9.3"
+    }
+}
